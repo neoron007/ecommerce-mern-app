@@ -3,6 +3,7 @@ import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 
 // Utiles
 import connectDB from "./config/db.js";
@@ -19,6 +20,13 @@ connectDB();
 
 const app = express();
 
+app.use(
+  cors({
+    origin: ["https://ecommerce-mern-app-eight.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
