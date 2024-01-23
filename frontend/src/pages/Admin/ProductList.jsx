@@ -144,7 +144,7 @@ const ProductList = () => {
             </label>
             <textarea
               type="text"
-              className="p-2 mb-3 bg-[#101011] border rounded-lg w-[90%] text-white"
+              className="p-2 mb-3 bg-[#101011] border rounded-lg w-[95%] text-white"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             ></textarea>
@@ -154,7 +154,7 @@ const ProductList = () => {
                 <label htmlFor="name block">Count In Stock</label> <br />
                 <input
                   type="text"
-                  className="p-4 mb-3 w-[25rem] border rounded-lg bg-[#101011] text-white"
+                  className="p-4 mb-3 w-[30rem] border rounded-lg bg-[#101011] text-white"
                   value={stock}
                   onChange={(e) => setStock(e.target.value)}
                 />
@@ -164,7 +164,7 @@ const ProductList = () => {
                 <label htmlFor="">Category</label> <br />
                 <select
                   placeholder="Choose Category"
-                  className="p-4 mb-3 w-[25rem] border rounded-lg bg-[#101011] text-white"
+                  className="p-4 mb-3 w-[30rem] border rounded-lg bg-[#101011] text-white"
                   onChange={(e) => setCategory(e.target.value)}
                 >
                   {categories?.map((c) => (
