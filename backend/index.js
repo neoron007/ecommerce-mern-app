@@ -22,7 +22,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: '*',
+    origin: 'ecommerce-mern-api-wine.vercel.app',
     methods: '*',
     allowedHeaders: ['X-CSRF-Token', 'X-Requested-With', 'Accept', 'Accept-Version', 'Content-Length', 'Content-MD5', 'Content-Type', 'Date', 'X-Api-Version'],
     credentials: true,
